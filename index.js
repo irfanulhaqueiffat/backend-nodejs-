@@ -2,11 +2,12 @@ const fs = require('fs');
 fs.writeFile('message.txt', 'Hello Node.js', (err) => {
   if (err) throw err;
 });
-console.log('The file has been saved!'); 
-console.log('Irfan Here');
-console.log('Irfan Here 2');
-setTimeout(() => {
-  console.log('This message is shown after 2 seconds');
+  console.log('The file has been saved!');
+
+setTimeout(() => {fs.writeFile('message.txt', 'hi everyone', (err) => {
+  if (err) throw err;
+});
+console.log('The file has been saved!');
+  
 }, 2000);
-   
-console.log('New Change for watch mode');
+console.log('End of the script');``
